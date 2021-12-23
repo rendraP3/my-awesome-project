@@ -1,0 +1,35 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  
+  rules:
+    # Error Rules
+    - avoid_print
+    - avoid_web_libraries_in_flutter
+    - no_logic_in_create_state
+    - unsafe_html
+    - use_key_in_widget_constructors
+
+    # Style Rules
+    - always_declare_return_types
+    - avoid_classes_with_only_static_members
+    - avoid_unnecessary_containers
+    - flutter_style_todos
+    - lines_longer_than_80_chars
+    - missing_whitespace_between_adjacent_strings
+    - omit_local_variable_types
+    - package_api_docs
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_single_quotes
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - unawaited_futures
+    - use_full_hex_values_for_flutter_colors
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
