@@ -10,7 +10,7 @@
   "scripts": {
     "setup": "npm install && npx lefthook install",
     "generate": "flutter pub run build_runner build --delete-conflicting-outputs",
-    "init": "flutter pub get && npm run generate && cd configuration && npm run init"
+    "init": "npm run setup && flutter pub get && npm run generate && cd configuration && flutter pub get && npm run generate"
   },
   "author": "Rendra",
   "license": "ISC",
